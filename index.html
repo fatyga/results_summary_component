@@ -12,59 +12,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- css styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
-    <main>
-      <article>
-        <h1>Your Result</h1>
-        <div>
-          <strong>75</strong>
-          <span>of 100</span>
+    <main class="result">
+      <article class="result__overall">
+        <header >
+          <h1 class="result__title result__title--secondary">Your Result</h1>
+        </header>
+        
+        <div class="result__score-box">
+          <strong class="result__obtained-score">76</strong>
+          <span class="result__max-score">of 100</span>
         </div>
 
-        <div>
-        <strong>Great</strong>
-          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        <div class="result__evaluation-box">
+        <strong class="result__evaluation-name">Great</strong>
+          <p class="result__evaluation-description">You scored higher than 65% of the people who have taken these tests.</p>
         </div> 
       </article>
 
-      <article>
-        <h2>Summary</h2>
+      <article class="result__summary">
+        <header>
+         <h2 class="result__title">Summary</h2>
+        </header>
 
-        <section>
-          <header>
+        <section class="result__skill-box result__skill-box--reaction">
+          <header class="result__skill-header">
             <img src="assets/images/icon-reaction.svg" alt="icon which represents reaction skills" >
-            <h2>Reaction</h2>
+            <h3 class="result__skill-name">Reaction</h3>
           </header>
-          <span><span>80</span><span>/</span>100</span>
+          <div class="result__skill-count-box">
+            <strong class="result__obtained-score result__obtained-score--secondary">80</strong><span class="result__skill-count-divider">/</span><span class="result__max-score result__max-score--secondary">100</span>
+          </div>
         </section>
 
-        <section>
-          <header>
+        <section class="result__skill-box result__skill-box--memory">
+          <header class="result__skill-header">
             <img src="assets/images/icon-memory.svg" alt="icon which represents memory skills" >
-            <h2>Memory</h2>
+            <h3 class="result__skill-name">Memory</h3>
           </header>
-          <span><span>92</span><span>/</span>100</span>
+         <div class="result__skill-count-box">
+            <strong class="result__obtained-score result__obtained-score--secondary">92</strong><span class="result__skill-count-divider">/</span><span class="result__max-score result__max-score--secondary">100</span>
+          </div>
         </section>
 
-        <section>
-          <header>
-            <img src="assets/images/icon-verspanal.svg" alt="icon which represents verbal skills" >
-            <h2>Verbal</h2>
+        <section class="result__skill-box result__skill-box--verbal">
+          <header class="result__skill-header">
+            <img src="assets/images/icon-verbal.svg" alt="icon which represents verbal skills" >
+            <h3 class="result__skill-name">Verbal</h3>
           </header>
-          <span><span>61</span><span>/</span>100</span>
+          <div class="result__skill-count-box">
+            <strong class="result__obtained-score result__obtained-score--secondary">61</strong><span class="result__skill-count-divider">/</span><span class="result__max-score result__max-score--secondary">100</span>
+          </div>
         </section>
 
-        <section>
-          <header>
+        <section class="result__skill-box result__skill-box--visual">
+          <header class="result__skill-header">
             <img src="assets/images/icon-visual.svg" alt="icon which represents visual skills" >
-            <h2>Visual</h2>
+            <h3 class="result__skill-name">Visual</h3>
           </header>
-          <span><span>72</span><span>/</span>100</span>
+         <div class="result__skill-count-box">
+            <strong class="result__obtained-score result__obtained-score--secondary">72</strong><span class="result__skill-count-divider">/</span><span class="result__max-score result__max-score--secondary">100</span>
+          </div>
         </section>
 
-        <button>Continue</button>
+        <button class="result__button">Continue</button>
       </article>
     </main>
   </body>
